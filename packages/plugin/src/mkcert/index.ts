@@ -15,7 +15,7 @@ import {
 } from '../lib/util'
 
 import Downloader from './downloader'
-import { BaseSource, GithubSource, CodingSource } from './source'
+import { BaseSource, GithubSource } from './source'
 import VersionManger from './version'
 import Config from './config'
 import Record from './record'
@@ -79,7 +79,7 @@ class Mkcert {
     if (this.sourceType === 'github') {
       this.source = GithubSource.create()
     } else if (this.sourceType === 'coding') {
-      this.source = CodingSource.create()
+      throw Error('Not implemented')
     } else {
       this.source = this.sourceType
     }
