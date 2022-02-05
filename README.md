@@ -1,6 +1,6 @@
-# [中文文档](README-zh_CN.md)
-
 # vite-plugin-mkcert
+
+This is a fork of https://github.com/liuweiGL/vite-plugin-mkcert to guarantee that no security vulnerabilities get introduced. Normally this isn't a thing I would do, but installing new certs is a big enough security risk that I think it's warranted.
 
 Use mkcert to provide certificate support for vite https development services.
 
